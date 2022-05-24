@@ -1,0 +1,164 @@
+.about{
+    width: 100hw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 0.5s ease;
+
+    
+}
+
+.about .egg{
+    height: 600px;
+    width: 600px;
+    margin-top: 15px;
+    box-shadow: 1px 2px 4px 6px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+}
+.about .egg img{
+    height: 450px;
+    width: 350px;
+    transition: 0.5s ease;
+}
+.about .egg p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(12, 145, 18, 0.5),rgba(0,178,124,0.8));
+    height: 600px;
+    width: 600px;
+    top: 0;
+    left: 0;
+    color: white;
+    position: absolute;
+    transition: 0.5s ease;
+    transform: translate(-140%,-140%);
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-align: justify;
+}
+
+.about .egg:hover{
+    cursor: pointer;
+}
+.about .egg:hover p{
+    transform: translate(0,0);
+}
+
+.about .chicken,.cock,.hen{
+    height: 600px;
+    width: 600px;
+    margin-top: 15px;
+    box-shadow: 1px 2px 4px 6px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.about .chicken img{
+    height: 450px;
+    width: 350px;
+    transition: 0.5s ease;
+}
+
+.about .chicken p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(145, 145, 145, 0.5),rgba(0,178,124,0.8));
+    height: 600px;
+    width: 600px;
+    top: 0;
+    left: 0;
+    color: white;
+    position: absolute;
+    transition: 0.5s ease;
+    transform: translate(-140%,-140%);
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-align: justify;
+}
+
+.about .chicken:hover{
+    cursor: pointer;
+}
+.about .chicken:hover p{
+    transform: translate(0,0);
+}
+
+
+
+.about .hen img{
+    height: 450px;
+    width: 350px;
+    transition: 0.5s ease;
+}
+
+.about .hen p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(145, 145, 145, 0.5),rgba(141,0,124,0.8));
+    height: 600px;
+    width: 600px;
+    top: 0;
+    left: 0;
+    color: white;
+    position: absolute;
+    transition: 0.5s ease;
+    transform: translate(-140%,-140%);
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-align: justify;
+}
+
+.about .hen:hover{
+    cursor: pointer;
+}
+.about .hen:hover p{
+    transform: translate(0,0);
+}
+
+
+.about .cock img{
+    height: 450px;
+    width: 350px;
+    transition: 0.5s ease;
+}
+
+.about .cock p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(145, 145,0, 0.8),rgba(141,0,124,0.8));
+    height: 600px;
+    width: 600px;
+    top: 0;
+    left: 0;
+    color: white;
+    position: absolute;
+    transition: 0.5s ease;
+    transform: translate(-140%,-140%);
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-align: justify;
+}
+
+.about .cock:hover{
+    cursor: pointer;
+}
+.about .cock:hover p{
+    transform: translate(0,0);
+}

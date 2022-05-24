@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken</title>
+    <style> 
+
+        .forBackground::after{
+            content:"";
+            background: url("{% static 'img/backgroundHome.jpg' %}");
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            opacity: 0.3;
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            width:100%;
+            z-index:-1;
+        
+        }
+    </style>
+    {% include 'links.html' %}
+    
+</head>
+<body>
+        {% include 'home.html'  %}
+        {% include 'gallery.html'  %}
+        {% include 'about.html'  %}
+        {% include 'contact.html'  %}
+</body>
+</html>

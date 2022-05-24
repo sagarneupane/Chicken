@@ -1,0 +1,42 @@
+<div class="contact" id="contact">
+    <div class="sideform">
+        
+    </div>
+    <div class="form">
+        <h1>Have Any Question? Contact Us</h1>
+        <form method="POST" >
+        {% csrf_token %}
+                
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="email">Enter Your Email</label><br>
+                <input type="email" name="email" id="email">
+
+            </div>
+            
+            <div class="col-sm-6">
+                <label for="fullname">Enter Your Full Name</label><br>
+                <input type="text" name="fullname" id="fullname">
+
+            </div>
+            <div class="col-sm-6">
+                <label for="msgsubject">Enter Your Message Subject</label><br>
+                <input type="text" name="msgsubject" id="msgsubject">
+
+            </div>
+            <div class="col-sm-12">
+                <label for="message">Enter Your Message</label><br>
+                <textarea name="message" id="message" cols="40" rows="6"></textarea>
+
+            </div>
+            <input type="submit" name="submit" value="send message" class="submit">
+        </div>
+
+        </form>
+    
+    </div>
+    <div class="endsideform">
+        
+    </div>
+   
+</div>

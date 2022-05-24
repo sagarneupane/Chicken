@@ -1,0 +1,47 @@
+{% load static %}
+{% comment %} For Globe Rotating {% endcomment %}
+<div class="globe">
+    <i class="fa fa-globe" aria-hidden="true"></i>
+</div>
+
+{% comment %} End  of globe rotating {% endcomment %}
+
+
+{% comment %} Start of Home Page {% endcomment %}
+<div class="home" id="home">
+    {% comment %} For Background Image {% endcomment %}
+    <div class="forBackground">
+
+    </div>
+    {% comment %} End of Background Image {% endcomment %}
+
+    {% comment %} Start of Navigation Bar {% endcomment %}
+    <div class="navbar">
+        <div class="logo">
+            Bawk
+        </div>
+        <div class="menuitem">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+{% comment %} End of  Navigation Bar {% endcomment %}
+
+{% comment %} Start of Content Inside Home {% endcomment %}
+    <div class="content">
+        <div class="imgdiv">
+            <img src="{% static 'img/chicken1.png'%}" alt="" class="imgchicken">
+        </div>
+       <div class="paragraph">
+        <p>
+            I am Chicken
+        </p>
+       </div>
+    </div>
+    {% comment %} End of content   {% endcomment %}
+</div>
+{% comment %} End of Home Page {% endcomment %}

@@ -1,0 +1,83 @@
+.gallery{
+    /* height: 100vh; */
+    width: 100%;
+    background: #e54545;
+    padding: 25px;
+   
+    
+}
+.gallery h1{
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px white;
+}
+.gallery h1::first-letter{
+    font-size: 8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 3px rgb(147, 3, 3);
+}
+
+
+
+.gallery .imageContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+    /* width: 100%; */
+    /* justify-content: space-around; */
+}
+
+.gallery .imageContainer .img{
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 5px 2px rgb(8, 11, 8);
+    /* margin-top:25px; */
+}
+.gallery .imageContainer img
+{
+    /* position: relative; */
+    /* margin-top: 25px; */
+    transition: 0.5s ease;
+}
+
+.gallery .imageContainer .img::before{
+    content:"Hover Me";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 0;
+    left: 0;
+    /* margin-top: 25px; */
+    height: 350px;
+    width: 350px;
+    background:linear-gradient(rgba(154,154,154,0.8),rgba(147,186,196,0.7));
+    z-index: 4;
+    transition: 0.5s ease;
+    
+    
+}
+
+.gallery .imageContainer .img:hover::before{
+    transform: translate(-140%,-140%);
+    
+
+}
+.gallery .imageContainer .img:hover img{
+    transform: scale(1.5);
+    cursor: pointer;
+
+}
